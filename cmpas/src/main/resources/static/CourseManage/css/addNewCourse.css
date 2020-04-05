@@ -1,0 +1,248 @@
+/* 
+* @Author: Marte
+* @Date:   2019-05-19 20:01:09
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-06-07 18:49:49
+*/
+.newMain {
+    margin: 0 auto;
+    min-width: 100%;
+    padding-top: 60px;
+}
+.mb80 {
+    margin-bottom: 80px!important;
+}
+.mt30 {
+    margin-top: 30px!important;
+}
+form {
+    display: block;    
+}
+input{
+    font-family: 微软雅黑, 宋体;
+    font-size: 14px;
+    line-height: 1.9;
+    color: rgb(5, 16, 26);
+    outline: none;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(234, 234, 234);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+}
+.edu-back-white {
+    background-color: #FFFFff;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.bor-bottom-greyE {
+    border-bottom: 1px solid #EEEEEE!important;
+}
+.color-grey-3 {
+    color: #333!important;
+}
+.padding10-20 {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.font-18 {
+    font-size: 18px!important;
+}
+.padding30-20 {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color: #FFF;
+}
+.color-grey-6 {
+    color: #666!important;
+}
+.font-16 {
+    font-size: 16px!important;
+}
+.color-orange {
+    color: #ff6800!important;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.mr30 {
+    margin-right: 30px;
+}
+.fl {
+    float: left!important;
+}
+.with30 {
+    width: 30%;
+    box-sizing: border-box;
+}
+.pr {
+    position: relative;
+}
+.greyInput {
+    background-color: #F5F5F5;
+    outline: none;
+}
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.winput-240-40 {
+    width: 240px;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.color-grey-9 {
+    color: #999999!important;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.mt10 {
+    margin-top: 10px!important;
+}
+.font-12 {
+    font-size: 12px!important;
+}
+/* .none {
+    display: none;
+} */
+.pr20 {
+    padding-right: 20px!important;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pb30 {
+    padding-bottom: 30px;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+.winput-90-40 {
+    width: 90px;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.ml40 {
+    margin-left: 40px;
+}
+.mt30 {
+    margin-top: 30px!important;
+}
+.magic-checkbox{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    border: 1px solid #c0c0c0;
+    vertical-align: middle;
+}
+.color-grey-8 {
+    color: #888!important;
+}
+.btn{
+    display: block;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    border-radius: 2px;   
+    margin-right: 20px;
+}
+.defalutSubmitbtn {
+    display: block;
+    border: 1px solid #4CACFF;
+    background-color: #4CACFF;
+    color: #fff!important;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.defalutCancelbtn {
+    text-decoration: none;
+    display: block;
+    border: 1px solid #CDCDCD;
+    background-color: #fafafa;
+    color: #999!important;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+}
+.flex1 {
+    flex: 1;
+}
+.df {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+    width: 100%;
+    margin-bottom: 0;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group-btn>.btn+.btn {
+    margin-left: -3px;
+}
+.input-group-btn>.btn {
+    position: relative;
+}
+.input-group-btn{
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: 0px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;    
+    height: 40px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#coursePhone a:hover{
+    color:#428bca;
+}

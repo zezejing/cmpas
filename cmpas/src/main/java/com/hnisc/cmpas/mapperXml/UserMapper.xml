@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnisc.cmpas.mapper.UserMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.hnisc.cmpas.bean.User">
+		<id column="id" property="id" />
+		<result column="phone" property="phone" />
+		<result column="password" property="password" />
+		<result column="nickname" property="nickname" />
+		<result column="iced" property="iced" />
+		<result column="register_time" property="registerTime" />
+		<result column="realname" property="realname" />
+		<result column="stuid" property="stuid" />
+		<result column="gender" property="gender" />
+		<result column="email" property="email" />
+		<result column="career" property="career" />
+		<result column="title" property="title" />
+		<result column="school" property="school" />
+		<result column="institude" property="institude" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, phone, password, nickname, iced, register_time AS registerTime, realname, stuid, gender, email, career, title, school, institude
+    </sql>
+
+</mapper>

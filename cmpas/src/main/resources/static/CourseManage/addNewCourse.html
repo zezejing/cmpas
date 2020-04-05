@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>新建课程</title>
+        <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+        <meta http-equiv="description" content="this is my page">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+        <link rel='icon' type='image/x-icon' href='images/login.jpg' />
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fileinput.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css"> 
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="css/zzsc.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-confirm.min.css">
+        <link rel="stylesheet" type="text/css" href="css/addNewCourse.css">
+        <!--JS-->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/fileinput.js"></script>
+        <script type="text/javascript" src="js/fileinput_locale_zh.js"></script>
+        <script type="text/javascript" src="js/jquery-confirm.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/addNewCourse.js"></script>
+    </head>
+    <body>
+        <div class="container" style="width:100%;padding:0px;">
+            <div class="row">
+              <div class="header">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                  <a href="index.html"><img src="images/login.jpg" class="logoimg" alt="" /></a>
+                  <div class="title"><h3>智能化学生过程性考核系统</h3></div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                  <div class="hidden">
+                  <input type="text" id="inputAccount" name="student_id" class="form-control" placeholder="搜索实训课程"/>
+                  <a href="" class="fl headIcon" id="sear"><i id="search" class="iconfont icon-sousuo color-white"></i></a>
+                </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="fr edu-menu-panel ml15" id="headerphone">
+                    <a href="#" id="headSculpture">
+                      <img src="images/headSculpture.png" height="114" width="114" alt="" class="radius mt13" />
+                    </a>
+                    <ul class="headSculpture-list">
+                      <span class="bor-bottom-greyE currentName task-hide">王静</span>
+                          <li><a href="myCourse.html">我的课程</a></li>
+                          <li><a href="update_pwd.html">修改密码</a></li>
+                          <li><a href="" id="logout">退出</a></li>
+                    </ul>
+                  </div>
+                  <div class="fr head-right" id="adds">
+                    <div class="fl edu-menu-panel edu-menu-panel headIcon add" id="add">
+                      <i id="addi" class="iconfont icon-tianjiafangda color-white"></i>
+                      <div class="edu-menu-list" style="top: 60px;width: 240px;">
+                        <div class="overPart"></div>
+                        <ul class="fl with50 edu-txt-center pr ul-leftline">
+                          <li><a id="addNewCourse" href="#">新建课程</a></li>
+                        </ul>
+                        <ul class="fl with50 edu-txt-center">
+                          <li><a id="addClass" href="#"  data-toggle="modal" data-target="#add_class">加入班级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+            <div class="newMain clearfix" style="padding-bottom:0px;">
+                <div class="educontent mt30 mb80">
+                  <form accept-charset="UTF-8" action="" class="new_course" id="new_course" method="post" enctype="multipart/form-data">
+                  <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="1J+NvzNA6sLhDLtK9q0lYDzZiRSySHR8itod9MSIM/E=" /></div>
+                  <div class="mb10 edu-back-white">
+                    <p class="padding10-20 bor-bottom-greyE font-18 color-grey-3">新建课程</p>
+                    <div class="padding30-20">
+                      <p class="color-grey-6 font-16 mb15" style="margin-bottom: 15px;">课程名称</p>
+                      <div class="clearfix">
+                        <span class="fl mr30 color-orange pt10">* </span>
+                        <div class="form-group" style="width: 40%;float:left;">
+                          <input type="text" name="name" id="name" autocomplete="off" style="width: 100%;" class="form-control" maxlength="40" placeholder="例如：数据结构" required autofocus/>
+                        </div>
+                        <p class="fl font-12 color-grey-9 mt10 ml10">（错误示例：数据结构2017本部；数据结构2017秋季；数据结构2017电子商务1班）</p>
+                        <span class="color-orange mt10 ml10 fl font-12" id="name_msg"></span>
+                      </div>
+                      <div class="clearfix mb30">
+                          <p class="color-grey-6 font-16 mb15" style="margin-bottom: 15px;">课程图片</p>
+                          <div class="clearfix">
+                            <span class="fl mr30 color-orange pt10">* </span>
+                            <div class="form-group" style="float:left;width: 70%;">
+                              <input id="file" name="file" type="file" class="file"  data-min-file-count="1" data-browse-on-zone-click="true" data-overwrite-initial="false">
+                            </div>
+                            <span class="color-orange ml10 fl font-12 mt10" id="course_file_notice"></span>
+                          </div>
+                      </div>
+                      <div class="clearfix mb30">
+                          <p class="color-grey-6 font-16 mb15" style="margin-bottom: 15px;">课程简介</p>
+                          <div class="clearfix">
+                            <span class="fl mr30 color-orange pt10">* </span>
+                            <div class="form-group" style="float:left;">
+                              <textarea name="introduction" id="introduction" class="form-control" rows="8" cols="110" maxlength="400" required></textarea>
+                            </div>
+                            <span class="color-orange ml10 fl font-12 mt10" id="introduction_msg"></span>
+                          </div>
+                      </div>
+                      <div class="clearfix mb30">
+                          <p class="color-grey-6 font-16 mb15" style="margin-bottom: 15px;">课程须知</p>
+                          <div class="clearfix">
+                            <span class="fl mr30 color-orange pt10">* </span>
+                            <div class="form-group" style="float:left;">
+                              <textarea name="instruction" id="instruction" class="form-control" rows="8" cols="110" maxlength="400" required></textarea>
+                            </div>
+                            <span class="color-orange ml10 fl font-12 mt10" id="instruction_msg"></span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb10 edu-back-white">
+                    <div class="padding30-20">
+                      <div class="clearfix mb30">
+                          <p class="color-grey-6 font-16 mb15" style="margin-bottom: 15px;">总学时</p>
+                          <div class="clearfix">
+                            <span class="fl mr30 color-orange pt10">* </span>
+                            <div class="form-group" style="width: 90px;float:left;">
+                              <input type="text" name="cycle" id="cycle" class="form-control" placeholder="例如：30" maxlength="6" style="width: 90px;height: 40px;" required/>
+                            </div>
+                            <span class="color-orange ml10 fl font-12 mt10" id="cycle_msg"></span>
+                          </div>
+                      </div>
+                      <div class="clearfix mb30">
+                          <p class="color-grey-6 font-16 mb15" style="margin-bottom: 15px;">学分</p>
+                          <div class="clearfix">
+                            <span class="fl mr30 color-orange pt10">* </span>
+                            <div class="form-group" style="width: 90px;float:left;">
+                              <input type="text" id="credit" name="credit" maxlength="4" class="form-control" placeholder="例如：4" style="width: 90px;height: 40px;" required/>
+                            </div>
+                            <span class="color-orange ml10 fl font-12 mt10" id="credit_msg"></span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix mt30">
+                    <button class="btn btn-primary" type="button" onclick="submitCourse()" id="submit_course">提交</button>
+                    <button class="btn btn-danger"  type="reset">取消</button>
+                  </div>
+                </form>
+                </div>
+            </div>
+            <div class="classFooter">
+              <div class="foot_container">
+                <div class="lf">
+                  <div class="link">友情链接：&nbsp;
+                    <a href="http://fuwu.hnedu.cn/web/index.jsp" target="_blank">湖南省教育阳光服务大厅</a>|&nbsp;
+                    <a href="http://gov.hnedu.cn/" target="_blank">湖南教育政务网</a>|&nbsp;
+                    <a href="http://www.hnedu.cn/" target="_blank">湖南教育网</a>|&nbsp;
+                    <a href="http://www.hnjy.com.cn/" target="_blank">为先在线</a></div>
+                    <p>邮编：410151 信箱 3301633914@qq.com&nbsp;<br>
+                    招聘邮箱：3301633914@qq.com&nbsp;<br>
+                    招生热线：0731-84098666 传真：0731-84098777&nbsp;<br>
+                    地址：长沙(星沙)经济技术开发区毛塘工业园湖南信息学院&nbsp;<br>
+                    技术支持：
+                    <a href="http://www.beone2009.com/" target="_blank" style="color: rgb(0, 0, 0); text-decoration: none;">3301633914@qq.com</a></p>
+                </div>
+                <div class="blog">
+                  <div class="lf">
+                    <img src="images/1501155702043052632.jpg" alt="">
+                    <p>官方微博</p>
+                  </div>
+                  <div class="lf">
+                    <img src="images/1501155608209037530.jpg" alt="" >
+                    <p>官方微信</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="container">
+                  <p>Copyright 2019 学习研究 备案序号：湘ICP备18021915号-1 负责人电子邮箱：3301633914@qq.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 加入班级模态框（Modal） -->
+        <div class="modal fade" id="add_class" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel" style="text-align:center;font-weight:bold;color:#000;">加入班级</h4>
+            </div>
+            <form action="" method="post" class="form-signin" id="addClassForm">
+              <div class="modal-body" style="padding:15px 25%;">
+                  <div class="form-group">
+                      <label for="inputAccount" class="tips" style="font-weight:normal;color:#000;font-size: 14px;">班级邀请码:</label>
+                      <input type="text" id="invitation_code" name="invitation_code" class="form-control" placeholder="请输入班级邀请码" maxlength="10" required autofocus style="width: 220px;" />
+                      <span id="invitation_code_msg" style="color:red;"></span>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="invitationCode">确定</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              </div>
+            </form>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+      </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnisc.cmpas.mapper.DependencyMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.hnisc.cmpas.bean.Dependency">
+		<id column="id" property="id" />
+		<result column="course_id" property="courseId" />
+		<result column="name" property="name" />
+		<result column="full_score" property="fullScore" />
+		<result column="weight" property="weight" />
+		<result column="data_file" property="dataFile" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, course_id AS courseId, name, full_score AS fullScore, weight, data_file AS dataFile
+    </sql>
+
+</mapper>

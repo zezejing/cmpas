@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>完善信息</title>
+    
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <link rel='icon' type='image/x-icon' href='images/login.jpg' />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/login.css">
+    
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/improve_info.js"></script>
+  </head>
+  
+  <body>
+     <div class="container">
+        <div class="inprove_info">
+         <form class="form-signin" method="post" action="" id="login_form">
+            <div class="form-title">
+                <h2 class="form-signin-heading" style="text-align: center">完善信息</h2>
+            </div>
+            <div class="form-content">
+              <div class="form-group">
+                <label for="inputAccount" class="tips" >邮箱</label>
+                <input type="email" class="form-control" id="email" name="email" maxlength="100" placeholder="请输入邮箱" required autofocus/>
+                <span id="email_msg" class="errorMsg"></span>
+              </div>
+              <div class="form-group">
+                <label for="inputAccount" class="tips">职业</label>
+                <input type="text" id="career" name="career" class="form-control" maxlength="20" placeholder="职业" required >
+                <span id="career_msg" class="errorMsg"></span>
+              </div>
+              <div class="form-group">
+                <label for="inputAccount" class="tips">职称</label>
+                <input type="text" id="title" name="title" class="form-control" maxlength="20" placeholder="职称" required >
+                <span id="title_msg" class="errorMsg"></span>
+              </div>
+              <div class="form-group">
+                <label for="inputAccount" class="tips">学校</label>
+                <input type="text" id="school" name="school" class="form-control" maxlength="40" placeholder="学校" required >
+                <span id="school_msg" class="errorMsg"></span>
+              </div>
+              <div class="form-group">
+                <label for="inputAccount" class="tips">学院</label>
+                <input type="text" id="institude" name="institude" class="form-control" maxlength="40" placeholder="学院" required >
+                <span id="institude_msg" class="errorMsg"></span>
+              </div>
+              <div class="buttonGroup">
+                  <button class="btn btn-primary" type="button" id="inprove_info">确定</button>
+                  <button class="btn btn-danger"  type="reset">取消</button>
+              </div>
+            </div>
+          </form> 
+        </div>
+    </div>
+  </body>
+</html>

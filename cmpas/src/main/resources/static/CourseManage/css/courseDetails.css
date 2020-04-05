@@ -1,0 +1,264 @@
+/* 
+* @Author: Marte
+* @Date:   2019-05-30 21:21:07
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-07-14 19:04:51
+*/
+.edu-back-white {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    background-color: #FFFFff;
+}
+/* p{
+    text-indent: 2em;
+} */
+.pb10 {
+    padding-bottom: 10px;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.color-grey-3 {
+    color: #333!important;
+}
+.color-grey{
+    color:#ddd;
+}
+a:hover{
+    text-decoration: none;
+    color: #FF7500;
+}
+/* .ml15 {
+    margin-left: 15px;
+} */
+.font-16 {
+    font-size: 16px!important;
+}
+.mr15 {
+    margin-right: 15px;
+}
+.mt3 {
+    margin-top: 8px;
+}
+.font-12 {
+    font-size: 12px!important;
+}
+.mt10 {
+    margin-top: 10px!important;
+}
+.edu-con-bg01 {
+    width: 100%;
+    background: #fff;
+}
+.edu-tab {
+    width: 100%;
+    background: #fff;
+}
+.mb20 {
+    margin-bottom: 20px!important;
+}
+.white-panel {
+    border-radius: 2px;
+    width: 100%;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+.bor-bottom-greyE {
+    border-bottom: 1px solid #EEEEEE!important;
+}
+.edu-back-white {
+    background-color: #FFFFff;
+}
+.pb25 {
+    padding-bottom: 20px;
+}
+.pt25 {
+    padding-top: 25px;
+}
+.white-panel li.active {
+    border-radius: 24px;
+    border: 1px solid #4CACFF;
+    color: #4CACFF;
+}
+
+.white-panel li {
+    width: 118px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #05101A;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+.white-panel li.active a {
+    text-decoration: none;
+    color: #4CACFF;
+}
+.white-panel li a {
+    color:#000;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.white-panel li a:hover {
+    color: #459be5;
+    text-decoration: none;
+}
+.undis{
+    display:none;
+}
+.padding25 {
+    padding: 25px;
+    box-sizing: border-box;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.work_search_ul{
+    padding: 0px;
+}
+.work_search_ul li span {
+    display: block;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+}
+.color-grey-8 {
+    color: #888!important;
+}
+.mr10 {
+    margin-right: 10px;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.mr25{
+    color:#000;
+    font-weight: normal;
+}
+.with20 {
+    width: 20%;
+    box-sizing: border-box;
+}
+.pr {
+    position: relative;
+}
+.mr20 {
+    margin-right: 20px;
+}
+.fr {
+    float: right!important;
+}
+.edu-find .edu-find-input {
+    border-bottom: 1px solid #EEEEEE;
+}
+.edu-find .edu-find-input input {
+    border: none;
+    outline: none;
+}
+input.task-form-100{
+    padding: 5px;
+    width: 100%;
+}
+.edu-find .edu-open {
+    position: absolute;
+    top: 1px;
+    right: -18px;
+}
+a.btn{
+    color:#fff;
+} 
+a.color-grey{
+    color:#ddd;
+}
+.edu-back-white a:hover{
+    color:#FF7500;
+}
+
+.editormd-html-preview {
+    width: 96%;    
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    overflow: auto;
+    width: 100%;
+    background-color: #fff;
+}
+.panel-mes-head {
+    padding: 10px;
+}
+.font-16 {
+    font-size: 16px!important;
+    font-weight: bold;
+}
+.buttonGroup{
+    margin:30px 0px 20px;
+}
+#break_grade{
+    border: 1px solid #FF7500;
+    color: #FF7500!important;
+    background-color: #fff;
+}
+.gain-code {
+    width: 49%;
+    float: left;
+    display: block;
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #CBCBCB;
+    color: #FFFFff !important;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.circle{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    text-align: center;
+}
+.circle span{
+    line-height: 100px;
+    font-size:18px;
+    color:red;
+}
+.student_homework{
+    margin-top: 40px;
+    padding:20px;
+}
+#textarea{
+    width:100%;
+    height:400px;
+    resize: none;
+}
+#duplicationCheck{
+    color:red;margin-right:30px;margin-top:10px;
+}
+#duplication{
+    color:red;margin-top:10px;
+}

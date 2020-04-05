@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="row">
+          <div class="header">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+              <a href="index.html"><img src="images/login.jpg" class="logoimg" alt="" /></a>
+              <div class="title"><h3>智能化学生过程性考核系统</h3></div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <div class="hidden">
+              <input type="text" id="inputAccount" name="student_id" class="form-control" placeholder="搜索实训课程"/>
+              <a href="" class="fl headIcon" id="sear"><i id="search" class="iconfont icon-sousuo color-white"></i></a>
+            </div>
+            </div>
+            <div class="col-md-2" style="">
+              <div class="fr edu-menu-panel ml15 hidden" id="headerphone">
+                <a href="#" id="headSculpture">
+                  <img src="images/headSculpture.jpg" height="114" width="114" alt="" class="radius mt13" />
+                </a>
+                <ul class="headSculpture-list">
+                  <span class="bor-bottom-greyE currentName task-hide">王静</span>
+                      <li><a href="myCourse.html">我的课程</a></li>
+                      <li><a href="update_pwd.html">修改密码</a></li>
+                      <li><a href="" id="logout">退出</a></li>
+                </ul>
+              </div>
+              <div id="login">
+                <span class="fr font-15 fr mt15 ml15">
+                <a href="login.html" class="mr5 color-white" style="">登录</a>
+                <em class="vertical-line"></em>
+                <a href="register.html" class="mr5 color-white" style="">注册</a>
+              </span>
+              </div>
+              <div class="fr head-right" id="adds">
+                <div class="fl edu-menu-panel edu-menu-panel headIcon add" id="add">
+                  <i id="addi" class="iconfont icon-tianjiafangda color-white"></i>
+                  <div class="edu-menu-list" style="top: 60px;width: 240px;">
+                    <div class="overPart"></div>
+                    <ul class="fl with50 edu-txt-center pr ul-leftline">
+                      <li><a id="addNewCourse" href="#">新建课程</a></li>
+                    </ul>
+                    <ul class="fl with50 edu-txt-center">
+                      <li><a id="addClass" href="#"  data-toggle="modal" data-target="#add_class">加入班级</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+    </body>
+</html>

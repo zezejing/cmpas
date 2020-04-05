@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnisc.cmpas.mapper.CourseMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.hnisc.cmpas.bean.Course">
+		<id column="id" property="id" />
+		<result column="user_id" property="userId" />
+		<result column="icon" property="icon" />
+		<result column="name" property="name" />
+		<result column="credit" property="credit" />
+		<result column="cycle" property="cycle" />
+		<result column="introduction" property="introduction" />
+		<result column="resource" property="resource" />
+		<result column="instruction" property="instruction" />
+		<result column="iced" property="iced" />
+		<result column="create_time" property="createTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id AS userId, icon, name, credit, cycle, introduction, resource, instruction, iced, create_time AS createTime
+    </sql>
+
+</mapper>

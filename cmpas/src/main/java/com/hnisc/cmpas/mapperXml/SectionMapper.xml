@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hnisc.cmpas.mapper.SectionMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.hnisc.cmpas.bean.Section">
+		<id column="id" property="id" />
+		<result column="part_id" property="partId" />
+		<result column="name" property="name" />
+		<result column="instruction" property="instruction" />
+		<result column="task" property="task" />
+		<result column="create_time" property="createTime" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, part_id AS partId, name, instruction, task, create_time AS createTime
+    </sql>
+
+</mapper>

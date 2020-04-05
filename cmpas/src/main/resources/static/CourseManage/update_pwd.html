@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>修改密码</title>
+        <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+        <meta http-equiv="description" content="this is my page">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+        <link rel='icon' type='image/x-icon' href='images/login.jpg' />
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="css/courseDetails.css">
+        <!--JS-->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/update_pwd.js"></script>
+        
+    </head>
+    <body>
+        <div class="container" style="width:100%;padding:0px;background-color: #4c96e1;">
+            <div class="row" style="padding:30px 0px 90px;margin: 0 auto;">
+                <div class="col-md-1"></div>
+                <div class="col-md-10" style="padding: 0px 20%;">
+                    <div class="pt10 pb10 edu-back-white clearfix">
+                        <p class="ml15 fl color-grey-3 font-16" style="margin-left: 20px;">修改密码</p>
+                        <a href="#" onclick="goBack()" class="fr font-12 mr15 mt3 color-grey">返回</a>
+                    </div>
+                    <div class="forms" style="background-color:#fff;padding:5% 10%;">
+                        <form class="form-signin" method="post" action="" id="login_form">
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="inputAccount" class="tips" >手机号</label>
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="手机号" required autofocus/>
+                                    <span id="phoneMs"></span>
+                                </div>
+                                <div class="form-group" style="margin-bottom:20px;">
+                                    <label for="inputAccount" class="tips" ></label>
+                                    <input type="text" id="VerificationCode" name="VerificationCode" class="form-control" placeholder="请输入短信验证码" style="width:49%;float: left;" required/>
+                                    <a href="#" class="gain-code" disabled onclick="get_verification_code()" id="get_verification_code">获取验证码</a>
+                                    <span id="verifMs"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="tips">新密码</label>
+                                    <input type="password" id="newpassword" name="newpassword" class="form-control" placeholder="新密码" required >
+                                    <span id="newpasswordMs"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword" class="tips">再次确认新密码</label>
+                                    <input type="password" id="newpasswords" name="newpasswords" class="form-control" placeholder="再次确认新密码" required >
+                                    <span id="newpasswordsMs"></span>
+                                </div>
+                                <div class="buttonGroup">
+                                    <button class="btn btn-primary" type="button" id="update_pwd">修改</button>
+                                    <button class="btn btn-danger"  type="reset">取消</button>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="bottom" style="position: fixed;bottom: 0px;left: 0px;">
+                <div class="container">
+                    <p>Copyright 2019 学习研究 备案序号：湘ICP备18021915号-1 负责人电子邮箱：3301633914@qq.com</p>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+

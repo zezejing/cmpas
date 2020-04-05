@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>课程动态</title>
+        <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+        <meta http-equiv="description" content="this is my page">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+        <link rel='icon' type='image/x-icon' href='images/login.jpg' />
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="css/course.css">
+        <!--JS-->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-paginator.js"></script>
+        <script type="text/javascript" src="js/fileinput.js"></script><!-- 
+        <script type="text/javascript" src="js/addNewCourse.js"></script> -->
+        <script type="text/javascript" src="js/course.js"></script>
+        
+    </head>
+    <body>
+        <div class="container" style="width:100%;padding:0px;">
+            <div class="row">
+              <div class="header">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                  <a href="index.html"><img src="images/login.jpg" class="logoimg" alt="" /></a>
+                  <div class="title"><h3>智能化学生过程性考核系统</h3></div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                  <div class="hidden">
+                  <input type="text" id="inputAccount" name="student_id" class="form-control" placeholder="搜索实训课程"/>
+                  <a href="" class="fl headIcon" id="sear"><i id="search" class="iconfont icon-sousuo color-white"></i></a>
+                </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="fr edu-menu-panel ml15" id="headerphone">
+                    <a href="#" id="headSculpture">
+                      <img src="images/headSculpture.jpg" height="114" width="114" alt="" class="radius mt13" />
+                    </a>
+                    <ul class="headSculpture-list">
+                      <span class="bor-bottom-greyE currentName task-hide">王静</span>
+                          <li><a href="myCourse.html">我的课程</a></li>
+                          <li><a href="update_pwd.html">修改密码</a></li>
+                          <li><a href="" id="logout">退出</a></li>
+                    </ul>
+                  </div>
+                  <div class="fr head-right" id="adds">
+                    <div class="fl edu-menu-panel edu-menu-panel headIcon add" id="add">
+                      <i id="addi" class="iconfont icon-tianjiafangda color-white"></i>
+                      <div class="edu-menu-list" style="top: 60px;width: 240px;">
+                        <div class="overPart"></div>
+                        <ul class="fl with50 edu-txt-center pr ul-leftline">
+                          <li><a id="addNewCourse" href="#">新建课程</a></li>
+                        </ul>
+                        <ul class="fl with50 edu-txt-center">
+                          <li><a id="addClass" href="#">加入班级</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+            <div class="row" style="padding-top:60px;margin: 0 auto;">
+                <div id="course_info_2383" class="courseHead">
+                    <div class="educontent clearfix educontentTop">
+                        <div class="color-white clearfix mb30">
+                            <span class="font-28 fl">课程名称</span>
+                            <div class="fr mt20 pr">
+                                <span>邀请码：
+                                    <span class="color-orange-tip" data-tip-down="同学们可直接通过邀请码加入课堂">DBLCU</span>
+                                </span>
+                                <button style="margin-left:15px" class="btn btn-danger" onclick="deleteCource();">退出课堂</button>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        <div class="fl mr40">
+                            <a href="" class="fl"><img alt="" class="mr10 radius fl mt3"width="58" height="50px" src="images/headSculpture.jpg" width="114px"></a>
+                            <div class="fl">
+                                <p class="color-white" style="margin: 0px;">王静</p>
+                                <p class="color-grey-c">湖南信息学院</p>
+                            </div>
+                        </div>
+                        <ul class="fl color-grey-eb pathInfo">
+                            <li>
+                                <span class="color-grey-eb">老师</span>
+                                <span class="color-white">1</span>
+                            </li>
+                            <li>
+                                <span class="color-grey-eb">学生</span>
+                                <span class="color-white">57</span>
+                            </li>
+                            <li>
+                                <span class="color-grey-eb">分班</span>
+                                <span class="color-white">5</span>
+                            </li>
+                            <li><span class="color-grey-eb">学分</span><span class="color-white">3.0</span></li>
+                            <li>
+                                <span class="color-grey-eb">学习人数</span>
+                                <span class="color-white">300</span>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:30px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6" style="background-color: #fff;padding:30px 20px 40px;margin-right:20px;">
+                        <h4>课程简介</h4>
+                        <p>C和C++是历史最悠久、最受欢迎的程序设计语言。C++是C语言的面向对象扩展，是C语言的超集。除了面向对象编程等C++特性之外，两种语言基本上是一致的。C和C++应用领域非常广泛，包括系统软件、游戏、网络软件、分布式系统、嵌入式系统等等。</p>
+                        <p>目前国际、国内或者各知名IT企业组织的程序设计竞赛大多使用C和C++语言，如ACM/ICPC、Google的GCJ、Facebook的HackerRank、TopCoder、百度之星等，获得好的成绩相当于获得进入这些知名企业的通行证。</p>
+                        <p>本实训系列的目标是引导学习者掌握C语言和C++语言，并具备使用它们进行问题求解的能力，为求职或更进一步的学习、研究打好基础。</p>
+                    </div>
+                    <div class="col-md-4" style="background-color: #fff;padding:30px 20px 40px">
+                        <h4>课程须知</h4>
+                        <p>本实训课程适用于《C程序设计》、《C++程序设计》或同类课程，支持“零基础”的同学自主学习C和C++语言，对同学们的计算机和编程基础没有特殊要求。</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row" style="margin-bottom:50px;">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2" style="background-color: #fff;margin-right:20px;padding:0px;">
+                        <ul class="edu-class-leftnav mb10">
+                            <li class="clearfix">
+                                <a href="course.html" class="fl">
+                                    <i class="iconfont icon-daima mr20 fl"></i>
+                                    <span class="task-hide activity-left-name">实训作业</span>
+                                </a>
+                            </li>
+                            <li class="clearfix active">
+                                <a href="trend.html" class="fl">
+                                    <i class="iconfont icon-dongtai mr20 fl"></i>
+                                    <span class="task-hide activity-left-name">动态</span>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="" class="fl" >
+                                    <i class="iconfont icon-ziyuan mr20 fl"></i>
+                                    <span class="task-hide activity-left-name">资源</span>
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="" class="fl">
+                                    <i class="iconfont icon-fenban mr20 fl"></i>
+                                    <span class="task-hide activity-left-name">班级</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8" style="background-color: #fff;padding:0px;">
+                        <div class="bor-bottom-greyEE">
+                            <span class="course_dongtai">课程动态</span>
+                            <a href="" class="white-btn orange-btn fr">+ 我要发布</a>
+                        </div>
+                        <div class="edu-back-white mt20">
+                            <div class="activity-list">
+                                <div id="user_activity_53680" class="activity-item clearfix">
+                                    <img src="images/headSculpture.jpg" height="60" width="60" alt="" class="radius mt13" />
+                                    <div class="flex1">
+                                        <div class="clearfix mb15">
+                                            <a href="" class="font-16 fl activity-title task-hide font-bd">发布的动态信息</a>
+                                        </div>
+                                        <p>
+                                            <span class="mr30">发布人</span>
+                                            <span class="color-grey-c fr mr20">2019-06-05 21:55</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="user_activity_53680" class="activity-item clearfix">
+                                    <img src="images/headSculpture.jpg" height="60" width="60" alt="" class="radius mt13" />
+                                    <div class="flex1">
+                                        <div class="clearfix mb15">
+                                            <a href="" class="font-16 fl activity-title task-hide font-bd">发布的动态信息</a>
+                                        </div>
+                                        <p>
+                                            <span class="mr30">发布人</span>
+                                            <span class="color-grey-c fr mr20">2019-06-05 21:55</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            <div class="classFooter">
+                <div class="foot_container">
+                    <div class="lf">
+                      <div class="link">友情链接：&nbsp;
+                        <a href="http://fuwu.hnedu.cn/web/index.jsp" target="_blank">湖南省教育阳光服务大厅</a>|&nbsp;
+                        <a href="http://gov.hnedu.cn/" target="_blank">湖南教育政务网</a>|&nbsp;
+                        <a href="http://www.hnedu.cn/" target="_blank">湖南教育网</a>|&nbsp;
+                        <a href="http://www.hnjy.com.cn/" target="_blank">为先在线</a></div>
+                        <p>邮编：410151 信箱 3301633914@qq.com&nbsp;<br>
+                        招聘邮箱：3301633914@qq.com&nbsp;<br>
+                        招生热线：0731-84098666 传真：0731-84098777&nbsp;<br>
+                        地址：长沙(星沙)经济技术开发区毛塘工业园湖南信息学院&nbsp;<br>
+                        技术支持：
+                        <a href="http://www.beone2009.com/" target="_blank" style="color: rgb(0, 0, 0); text-decoration: none;">3301633914@qq.com</a></p>
+                    </div>
+                    <div class="blog">
+                      <div class="lf">
+                        <img src="images/1501155702043052632.jpg" alt="">
+                        <p>官方微博</p>
+                      </div>
+                      <div class="lf">
+                        <img src="images/1501155608209037530.jpg" alt="" >
+                        <p>官方微信</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <p>Copyright 2019 学习研究 备案序号：湘ICP备18021915号-1 负责人电子邮箱：3301633914@qq.com</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+

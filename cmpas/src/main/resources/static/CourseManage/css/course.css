@@ -1,0 +1,330 @@
+/* 
+* @Author: Marte
+* @Date:   2019-05-28 16:19:32
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-07-15 22:52:37
+*/
+.courseHead{
+    width: 100%;
+    margin-bottom: 40px;
+    background-size: 100% 100%;
+    background-image: url(../images/tim.jpg); /* 
+    background-color: #160051; */
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+}
+p{
+    text-indent: 2em;
+}
+.fr{
+    float:right;
+}
+.educontentTop {
+    padding:0 10%;
+    width: 100% !important;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+.font-28 {
+    font-size: 28px!important;
+}
+.mt20 {
+    margin-top: 20px!important;
+}
+.color-orange-tip {
+    color: #FF954C!important;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.color-blue {
+    color: #3498db!important;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mr40 {
+    margin-right: 40px;
+}
+.color-grey-c {
+    color: #ccc!important;
+}
+.color-grey-eb {
+    color: #EBEBEB!important;
+}
+.pathInfo li {
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+    min-width: 40px;
+}
+.pathInfo li span {
+    display: block;    
+    margin-bottom: 7px;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: bold ;
+    padding-bottom: 10px;
+}
+.ring-blue {
+    width: 18px;
+    height: 18px;
+    display: block;
+    border-radius: 50%;
+    background-color: #4CACFF;
+    text-align: center;
+}
+.edu-class-leftnav {
+    background: #fff;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+.edu-class-leftnav{
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+}
+ .edu-class-leftnav li  {
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+/* .edu-class-leftnav li.active:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 14px;
+    bottom: 0;
+    right: auto;
+    height: 24px;
+    width: 2px;
+    background-color: #459be5;
+} */
+.active{
+    background-color: #459be5;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.edu-class-leftnav li a {
+    padding-left: 42px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.edu-class-leftnav li a:hover{
+    color:#fff;
+    background-color: #459be5;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #05101a;
+}
+.mr20 {
+    margin-right: 20px;
+}
+
+.iconfont {
+    font-size: 18px!important;
+}
+.fl {
+    float: left!important;
+}
+.activity-left-name {
+    display: block;
+    max-width: 126px;
+    float: left;
+}
+.task-hide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bor-bottom-greyEE {
+    border-bottom: 1px solid #EEEEEE!important;
+    padding: 20px;
+    box-sizing: border-box;
+} 
+.course_dongtai{
+    font-size: 16px!important;
+}
+.white-btn {
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 8px;
+    border: 1px solid #ccc;
+    color: #666;
+    letter-spacing: 1px;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 3px;
+}
+a.white-btn.orange-btn {
+    border: 1px solid #FF7500;
+    color: #FF7500!important;
+}
+.lesson-saved-list-item {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 37px 0px;
+}
+.title-line {
+    padding: 0px 20px;
+}
+.font-18 {
+    font-size: 18px!important;
+}
+.font-bd {
+    font-weight: bold;
+}
+.part_description{
+    color: #999 !important;
+    padding-left: 28px;
+    margin:20px;
+    font-size:15px!important;
+    text-align: justify;
+    line-height: 30px;
+}
+.paragraph {
+    height: 50px;
+    padding: 10px 20px 10px 47px;
+    box-sizing: border-box;
+}
+
+li.li-width63 {
+    width: 63%;
+    text-align: left;
+}
+.progressRing {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.progressRing-part {
+    color: #B3DCFF;/* 
+    position: absolute;
+    top: -10px; */
+}
+.status_li{
+    margin-right: 80px;
+}
+a.user_bluebg_btn {
+    background-color: #4CACFF;
+    color: #fff;
+}
+.btn_auto {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0px 18px;
+    margin-right: 10px;
+}
+.none{
+    display:none;
+}
+
+#addSection{
+    border: 1px solid #FF7500;
+    color: #fff!important;
+    background-color:#FF7500;
+    margin-left: 10px;
+}
+#addChapter,#insert_class,#delete_class,#add_resource,#import_achievements,#achievements_basis,#release_results,#uploadModel,#derivedItem{
+    border: 1px solid #FF7500;
+    color: #FF7500!important;
+    background-color:#fff
+}
+.activity-list{
+    padding-left: 20px;
+}
+.activity-item:first-child {
+    border-top: none;
+}
+.activity-item {
+    padding: 30px 0px;
+    display: flex;
+    border-top: 1px solid #eee;
+}
+.flex1 {
+    margin-left: 20px;
+    flex: 1;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
+.activity-title {
+    max-width: 530px;
+}
+.font-16 {
+    font-size: 16px!important;
+}
+.font-bd {
+    font-weight: bold;
+}
+.task-hide {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.color-grey-c {
+    color: #ccc!important;
+}
+.mr20 {
+    margin-right: 20px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+#class_fl{
+    padding-left: 77px;
+}
+.resource_list li{
+    height:40px;
+    line-height: 40px;
+}
+.resource_list li .btn{
+    background:#fff;
+    border:1px solid #fff;
+}
+.resource_list a:hover{
+    color: #459be5;
+}
+/* .lesson-saved-list-item a{
+    color: red;
+} */
+.lesson-saved-list-item a:hover{
+    color: #459be5;
+}
+.paragraph a:hover{
+    color:#fff;
+}
